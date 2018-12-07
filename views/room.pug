@@ -1,0 +1,10 @@
+extends layout
+
+block content
+  fieldset
+    legend Chat create
+    form(action='/room' method='post')
+      div: input(name='title' placeholder='room title')
+      div: input(name='max' type='number' placeholder='max' min='2' value='10')
+      div: input(name='password' type='password' placeholder='Password')
+      div: button(type='submit') Submit
